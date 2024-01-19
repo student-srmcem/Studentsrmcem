@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <style>
+        .a {
+            box-shadow: 0px 0px 0px #888, 0px -5px 1px #7325bd;
+            border-radius: 50px 0px 0px 0px;
+
+        }
+
+        .drop {
+
+            border-style: none;
+
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            // Function to get query parameter from the URL
+            function getQueryParam(param) {
+                const urlParams = new URLSearchParams(window.location.search);
+                return urlParams.get(param);
+            }
+
+            // Retrieve the fare from the URL
+            var fare = getQueryParam('fare');
+
+            // Display the fare on the page (you can customize how you want to display it)
+            if (fare !== null) {
+                document.getElementById('fareDisplay').innerText = 'Fare: ' + fare + ' rupees';
+            }
+        });
+    </script>
+
+</head>
+
+<body background="image/image2.jpg"
+    style="background-position: center;background-repeat: no-repeat;background-size: cover;background-attachment: fixed;">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-7">
+                <div class="row " style="background-color: rgba(119, 119, 222, 0.938);">
+                    <div class="col-sm-3  d-flex justify-content-center">
+
+                        <h2 style=" color:white; text-align: bold;">Fare Calculation </h2>
+                    </div>
+
+                    <div class="col-sm-7 "></div>
+                    <div class="col-sm-2  d-flex justify-content-center">
+                        <a href="page4.html"> <img src="image/back-button.png" alt="" class="img-fluid"
+                                style="height:70px; margin-top: 10px;"></a>
+                    </div>
+                </div>
+                <br>
+                <div class="row " style="background-color: white; height:100%;">
+                    <div class="row p-10">
+                        <div class="card p-5 "
+                            style=" width:50%; background-color: rgba(119, 119, 222, 0.938); border-radius: 20px  0  20px 0 ;  margin-left: 25%;">
+                            <div class="drop"><label>
+                                    <h5>Form :</h5>
+                                </label>
+                                <select
+                                    style="margin: -50% 20%;text-decoration: underline;background-color:  rgba(110, 112, 245, 0.089); border: 0px;">
+                                    <option value="#"></option>
+                                    <option value="Munsipulia">Munsipulia</option>
+                                    <option value="indira Nagar Metro">indira Nagar Metro</option>
+                                    <option value="Bhootnath Market">Bhootnath Market</option>
+                                    <option value="Lekhraj Market">Lekhraj Market</option>
+                                    <option value="Badshah Nagar">Badshah Nagar</option>
+                                    <option value="IT College">IT College</option>
+                                    <option value="Vishvavidyalay Metro">Vishvavidyalay Metro</option>
+                                    <option value="K D Singh Stadium">K D Singh Stadium</option>
+                                    <option value="Hazratganj">Hazratganj</option>
+                                    <option value="Sachivalaya">Sachivalaya</option>
+                                    <option value="Husainganj">Husainganj</option>
+                                    <option value="Durga Puri">Durga Puri</option>
+                                    <option value="Mawaiya">Mawaiya</option>
+                                    <option value="Alambagh Bus Stand">Alambagh Bus Stand</option>
+                                    <option value="Singar Nagar">Singar Nagar</option>
+                                    <option value="Krishna Nagar Metro">Krishna Nagar Metro</option>
+                                    <option value="Transport Nagar">Transport Nagar</option>
+                                    <option value="Amausi Metro">Amausi Metro</option>
+                                    <option value="CCS Airport">CCS Airport</option>
+                                </select>
+                            </div>
+                            <div>
+
+                                <label>
+                                    <h5>To :</h5>
+                                </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <select
+                                    style="margin: -50% 21%;text-decoration: underline;background-color: rgba(110, 112, 245, 0.089); border: 0px;">
+
+                                    <option value="#"></option>
+                                    <option value="Munsipulia">Munsipulia</option>
+                                    <option value="indira Nagar Metro">indira Nagar Metro</option>
+                                    <option value="Bhootnath Market">Bhootnath Market</option>
+                                    <option value="Lekhraj Market">Lekhraj Market</option>
+                                    <option value="Badshah Nagar">Badshah Nagar</option>
+                                    <option value="IT College">IT College</option>
+                                    <option value="Vishvavidyalay Metro">Vishvavidyalay Metro</option>
+                                    <option value="K D Singh Stadium">K D Singh Stadium</option>
+                                    <option value="Hazratganj">Hazratganj</option>
+                                    <option value="Sachivalaya">Sachivalaya</option>
+                                    <option value="Husainganj">Husainganj</option>
+                                    <option value="Durga Puri">Durga Puri</option>
+                                    <option value="Mawaiya">Mawaiya</option>
+                                    <option value="Alambagh Bus Stand">Alambagh Bus Stand</option>
+                                    <option value="Singar Nagar">Singar Nagar</option>
+                                    <option value="Krishna Nagar Metro">Krishna Nagar Metro</option>
+                                    <option value="Transport Nagar">Transport Nagar</option>
+                                    <option value="Amausi Metro">Amausi Metro</option>
+                                    <option value="CCS Airport">CCS Airport</option>
+                                </select>
+                                <br></br>
+                                <center>
+                            </div>
+
+
+                            <button type="button" class="btn" style="margin:0 20%; color:#b95151;"><button type="button"
+                                    class="btn btn-outline-danger">
+
+                                    Get Fare </button>
+                                </center>
+                                <div id="fareDisplay"></div>
+                        </div>
+                    </div>
+                    <div class="card a" style=" width:90%; margin-top: 2%; margin-left: 5%; ">
+                        <br></br>
+                        <img src="image/Lucknow-metro-in-route-map.gif" alt="">
+
+
+                        <br></br>
+                        <div class="row p-2 ">
+                            <div class="card p-3 "
+                                style=" width:150%;  height:100%; background-color: #9249d6; border-radius: 20px  0  20px 0;">
+                                <h3 style="text-align: left; color: white; margin-left: 35%;"> <u> Stations Summary</u>
+                                </h3>
+                                <hr>
+
+
+                                <div class=" row justify-content-center align-items-center p-2">
+                                    <div class=" col-md-2 col-2">
+                                        <div class="d-flex justify-content-center">
+                                            <i class="bi bi-train-front"
+                                                style="background: green;padding: 5px;border-radius: 50%; margin-left: -27%; margin-bottom: 5%;">
+                                                <img src="image/fav-icon.png" alt="" style="height:30px;">
+                                            </i>
+                                        </div>
+
+                                        <div class="d-flex justify-content-center">
+                                            <img src="image/railroad.png" height="41px" alt="track"
+                                                style="filter: invert(1); margin-right: 30%;">
+                                        </div>
+                                        <div class="d-flex justify-content-center">
+                                            <img src="image/railroad.png" height="41px" alt="track"
+                                                style="filter: invert(1); margin-right: 30%;">
+                                        </div>
+                                        <div class="d-flex justify-content-center">
+                                            <img src="image/railroad.png" height="41px" alt="track"
+                                                style="filter: invert(1); margin-right: 30%;">
+                                        </div>
+                                        <div class="d-flex justify-content-center">
+                                            <img src="image/railroad.png" height="41px" alt="track"
+                                                style="filter: invert(1); margin-right: 30%;">
+                                        </div>
+
+                                        <div class="d-flex justify-content-center">
+                                            <img src="image/railroad.png" height="41px" alt="track"
+                                                style="filter: invert(1); margin-right: 30%;">
+                                        </div>
+                                        <div class="d-flex justify-content-center">
+                                            <img src="image/railroad.png" height="41px" alt="track"
+                                                style="filter: invert(1); margin-right: 30%;">
+                                        </div>
+                                        <div class="d-flex justify-content-center">
+                                            <img src="image/railroad.png" height="41px" alt="track"
+                                                style="filter: invert(1); margin-right: 30%;">
+                                        </div>
+                                        <div class="d-flex justify-content-center">
+                                            <img src="image/railroad.png" height="41px" alt="track"
+                                                style="filter: invert(1); margin-right: 30%;">
+                                        </div>
+                                        <div class="d-flex justify-content-center">
+                                            <img src="image/railroad.png" height="41px" alt="track"
+                                                style="filter: invert(1); margin-right: 30%;">
+                                        </div>
+                                        <div class="d-flex justify-content-center">
+                                            <img src="image/railroad.png" height="41px" alt="track"
+                                                style="filter: invert(1); margin-right: 30%;">
+                                        </div>
+                                        <div class="d-flex justify-content-center">
+                                            <img src="image/railroad.png" height="41px" alt="track"
+                                                style="filter: invert(1); margin-right: 30%;">
+                                        </div>
+                                        <div class="d-flex justify-content-center">
+                                            <img src="image/railroad.png" height="41px" alt="track"
+                                                style="filter: invert(1); margin-right: 30%;">
+                                        </div>
+                                        <div class="d-flex justify-content-center">
+                                            <img src="image/railroad.png" height="41px" alt="track"
+                                                style="filter: invert(1); margin-right: 30%;">
+                                        </div>
+                                        <div class="d-flex justify-content-center">
+                                            <img src="image/railroad.png" height="41px" alt="track"
+                                                style="filter: invert(1); margin-right: 30%;">
+                                        </div>
+                                        <div class="d-flex justify-content-center">
+                                            <img src="image/railroad.png" height="41px" alt="track"
+                                                style="filter: invert(1); margin-right: 30%;">
+                                        </div>
+                                        <div class="d-flex justify-content-center">
+                                            <img src="image/railroad.png" height="41px" alt="track"
+                                                style="filter: invert(1); margin-right: 30%;">
+                                        </div>
+                                        <div class="d-flex justify-content-center">
+                                            <img src="image/railroad.png" height="41px" alt="track"
+                                                style="filter: invert(1); margin-right: 30%;">
+                                        </div>
+                                        <div class="d-flex justify-content-center">
+                                            <img src="image/railroad.png" height="41px" alt="track"
+                                                style="filter: invert(1); margin-right: 30%;">
+                                        </div>
+                                        <div class="d-flex justify-content-center">
+                                            <img src="image/railroad.png" height="41px" alt="track"
+                                                style="filter: invert(1); margin-right: 30%;">
+
+
+                                        </div>
+                                        <div class="d-flex justify-content-center">
+                                            <i class="bi bi-train-front"
+                                                style="background:red;padding: px;border-radius: 50%; margin-left: -27%; margin-top: 5%;">
+                                                <img src="image/fav-icon.png" alt="" style="height:30px;">
+                                            </i>
+                                        </div>
+
+                                    </div>
+
+                                    <div class="col-md-6 col-9">
+                                        <h6 class="p-2 text-white">
+                                            <i class="bi bi-train-front">
+                                            </i>
+                                            <span> Munshipiliya</span>
+                                            </a>
+                                        </h6>
+                                        <h6 class="p-2 text-white">
+                                            <i class="bi bi-train-front">
+                                            </i>
+                                            <span>indira Nagar Metro</span>
+                                            </a>
+                                        </h6>
+
+                                        <h6 class="p-2 text-white">
+                                            <i class="bi bi-train-front">
+                                            </i>
+                                            <span>Bhootnath Market</span>
+                                            </a>
+                                        </h6>
+                                        <h6 class="p-2 text-white">
+                                            <i class="bi bi-train-front">
+                                            </i>
+                                            <span>Lekhraj Market</span>
+                                            </a>
+                                        </h6>
+                                        <h6 class="p-2 text-white">
+                                            <i class="bi bi-train-front">
+                                            </i>
+                                            <span>Badshah Nagar</span>
+                                            </a>
+                                        </h6>
+                                        <h6 class="p-2 text-white">
+                                            <i class="bi bi-train-front">
+                                            </i>
+                                            <span>IT College</span>
+                                            </a>
+                                        </h6>
+                                        <h6 class="p-2 text-white">
+                                            <i class="bi bi-train-front">
+                                            </i>
+                                            <span>Vishvavidyalay Metro</span>
+                                            </a>
+                                        </h6>
+                                        <h6 class="p-2 text-white">
+                                            <i class="bi bi-train-front">
+                                            </i>
+                                            <span>K D Singh Stadium</span>
+                                            </a>
+                                        </h6>
+                                        <h6 class="p-2 text-white">
+                                            <i class="bi bi-train-front">
+                                            </i>
+                                            <span>Hazratganj</span>
+                                            </a>
+                                        </h6>
+                                        <h6 class="p-2 text-white">
+                                            <i class="bi bi-train-front">
+                                            </i>
+                                            <span>Sachivalaya</span>
+                                            </a>
+                                        </h6>
+                                        <h6 class="p-2 text-white">
+                                            <i class="bi bi-train-front">
+                                            </i>
+                                            <span>Husainganj</span>
+                                            </a>
+                                        </h6>
+                                        <h6 class="p-2 text-white">
+                                            <i class="bi bi-train-front">
+                                            </i>
+                                            <span>Durga Puri</span>
+                                            </a>
+                                        </h6>
+                                        <h6 class="p-2 text-white">
+                                            <i class="bi bi-train-front">
+                                            </i>
+                                            <span>Mawaiya</span>
+                                            </a>
+                                        </h6>
+                                        <h6 class="p-2 text-white">
+                                            <i class="bi bi-train-front">
+                                            </i>
+                                            <span>Alambagh Bus Stand</span>
+                                            </a>
+                                        </h6>
+
+                                        <h6 class="p-2 text-white">
+                                            <i class="bi bi-train-front">
+                                            </i>
+                                            <span>Singar Nagar</span>
+
+                                            </a>
+                                        </h6>
+
+                                        <h6 class="p-2 text-white">
+                                            <i class="bi bi-train-front">
+                                            </i>
+                                            <span>Krishna Nagar Metro</span>
+                                            </a>
+                                        </h6>
+
+                                        <h6 class="p-2 text-white">
+                                            <i class="bi bi-train-front">
+                                            </i>
+                                            <span>Transport Nagar</span>
+                                            </a>
+                                        </h6>
+
+                                        <h6 class="p-2 text-white">
+                                            <i class="bi bi-train-front">
+                                            </i>
+                                            <span>Amausi Metro</span>
+                                            </a>
+                                        </h6>
+
+                                        <h6 class="p-2 text-white">
+                                            <i class="bi bi-train-front">
+                                            </i>
+                                            <span>CCS Airport</span>
+                                            </a>
+                                        </h6>
+
+
+
+
+
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+                        </div>
+
+                        <div class="row">
+                            <div class="col-sm-2"></div>
+                            <div class="col-sm-8">
+                                <div class="container">
+                                    <div class="row justify-content-center m-0 Rounded-Border-Box">
+                                        <div class="metro_card mb-2"><span>
+                                                <center>
+                                                    <img src="image/newmetrocard.jpg" alt="metro_card" width="50%">
+                                            </span><span> <br>
+                                                <button style="border-radius: 50% 0  50% 0 ;width: 50% ;">Learn
+                                                    More</button>
+                                            </span></center>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="row" style="background-color:rgba(119, 119, 222, 0.938); height:5%; margin: top 500%; ">
+                        <div class="col-sm-1"></div>
+                        <div class="col-sm-2 ">
+                            <img src="image/house.png" .jpg" height="50px" style="margin-top: 20px;border-radius: 10%">
+                        </div>
+                        <div class="col-2">
+                            <img src="image/logo.jpg" height="50px" style="margin-top: 20px;border-radius: 10%">
+                        </div>
+                        <div class="col-2">
+                            <img src="image/metro.jpg" height="50px" style="margin-top: 20px;border-radius: 10%">
+                        </div>
+                        <div class="col-2">
+                            <img src="image/foot.png" height="50px" style="margin-top: 20px; border-radius: 10%;">
+                        </div>
+                        <div class="col-sm-2">
+                            <img src="image/logo.jpg" height="50px" style="margin-top: 20px;border-radius: 10% ">
+                        </div>
+                        <div class="col-sm-1"></div>
+                    </div>
+
+                </div>
+                <div class="col-sm-3"></div>
+            </div>
+        </div>
+</body>
+
+</html>

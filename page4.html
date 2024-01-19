@@ -1,0 +1,1066 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous">
+
+
+
+
+        </script>
+    <style>
+        .a {
+            box-shadow: 0px 0px 0px #888, 0px -5px 1px #7325bd;
+            border-radius: 50px 0px 0px 0px;
+
+        }
+
+        .drop {
+
+            border-style: none;
+
+        }
+    </style>
+</head>
+
+<body background="image/image2.jpg"
+    style="background-position: center;background-repeat: no-repeat;background-size: cover;background-attachment: fixed;">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-2"></div>
+            <div class="col-sm-7">
+                <div class="row " style="background-color: rgba(119, 119, 222, 0.938);">
+                    <div class="col-sm-3  d-flex justify-content-center">
+
+
+
+                        <h2 style=" color:white; text-align: bold;">Fare Calculation </h2>
+                    </div>
+
+                    <div class="col-sm-7 "></div>
+                    <div class="col-sm-2  d-flex justify-content-center">
+                        <a href="index.html"> <img src="image/back-button.png" alt="" class="img-fluid"
+                                style="height:70px; margin-top: 10px;"></a>
+
+                    </div>
+
+                </div>
+                <div style="width:100%;height:3px; background-color: rgb(38, 238, 241);"></div>
+
+
+
+                <br>
+
+
+                <div class="row " style="background-color: white; height:580px;">
+                    <div class="row p-10">
+                        <div class="card p-5 "
+                            style=" width:45%; background-color: rgba(119, 119, 222, 0.938); border-radius: 20px  0  20px 0 ;  margin-left: 30%;">
+                            <div class="drop"><label>
+                                    <h5>Form :</h5>
+                                </label>
+
+
+                                <select style="margin-left: 50%;text-decoration: underline;
+                                    background-color:  rgba(110, 112, 245, 0.089); border: 0px;" id="fromLocation">
+                                    <option value="#"></option>
+                                    <option value="Munsipulia">Munsipulia</option>
+                                    <option value="indira Nagar Metro">indira Nagar Metro</option>
+                                    <option value="Bhootnath Market">Bhootnath Market</option>
+                                    <option value="Lekhraj Market">Lekhraj Market</option>
+                                    <option value="Badshah Nagar">Badshah Nagar</option>
+                                    <option value="IT College">IT College</option>
+                                    <option value="Vishvavidyalay Metro">Vishvavidyalay Metro</option>
+                                    <option value="K D Singh Stadium">K D Singh Stadium</option>
+                                    <option value="Hazratganj">Hazratganj</option>
+                                    <option value="Sachivalaya">Sachivalaya</option>
+                                    <option value="Husainganj">Husainganj</option>
+                                    <option value="Durga Puri">Durga Puri</option>
+                                    <option value="Mawaiya">Mawaiya</option>
+                                    <option value="Alambagh Bus Stand">Alambagh Bus Stand</option>
+                                    <option value="Singar Nagar">Singar Nagar</option>
+                                    <option value="Krishna Nagar Metro">Krishna Nagar Metro</option>
+                                    <option value="Transport Nagar">Transport Nagar</option>
+                                    <option value="Amausi Metro">Amausi Metro</option>
+                                    <option value="CCS Airport">CCS Airport</option>
+                                </select>
+                            </div>
+                            <div>
+
+                                <label>
+                                    <h5>To :</h5>
+                                </label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                <select
+                                    style="margin-left: 50%;text-decoration: underline;background-color: rgba(110, 112, 245, 0.089); border: 0px;"
+                                    id="toLocation">
+
+                                    <option value="#"></option>
+                                    <option value="Munsipulia">Munsipulia</option>
+                                    <option value="indira Nagar Metro">indira Nagar Metro</option>
+                                    <option value="Bhootnath Market">Bhootnath Market</option>
+                                    <option value="Lekhraj Market">Lekhraj Market</option>
+                                    <option value="Badshah Nagar">Badshah Nagar</option>
+                                    <option value="IT College">IT College</option>
+                                    <option value="Vishvavidyalay Metro">Vishvavidyalay Metro</option>
+                                    <option value="K D Singh Stadium">K D Singh Stadium</option>
+                                    <option value="Hazratganj">Hazratganj</option>
+                                    <option value="Sachivalaya">Sachivalaya</option>
+                                    <option value="Husainganj">Husainganj</option>
+                                    <option value="Durga Puri">Durga Puri</option>
+                                    <option value="Mawaiya">Mawaiya</option>
+                                    <option value="Alambagh Bus Stand">Alambagh Bus Stand</option>
+                                    <option value="Singar Nagar">Singar Nagar</option>
+                                    <option value="Krishna Nagar Metro">Krishna Nagar Metro</option>
+                                    <option value="Transport Nagar">Transport Nagar</option>
+                                    <option value="Amausi Metro">Amausi Metro</option>
+                                    <option value="CCS Airport">CCS Airport</option>
+                                </select>
+                                <br></br>
+                                <center>
+                            </div>
+
+
+
+
+
+                          
+                            </center>
+                            <button type="button" id="getFareBtn" class="btn btn-outline-danger float-end"
+                                style="margin-left: 70%;">
+                                Get Fare
+                            </button>
+                        </div>
+                    </div>
+                    <div class="card a" style=" width:90%; margin-top: 2%; margin-left: 5%; ">
+                        <br></br>
+                        <div class="row">
+                            <div class="col-sm-2"></div>
+                            <div class="col-sm-8">
+                                <div class="container">
+                                    <div class="row justify-content-center m-0 Rounded-Border-Box">
+                                        <div class="metro_card mb-2"><span>
+                                                <center>
+                                                    <img src="image/metrocard.jpg" alt="metro_card" width="50%">
+                                            </span><span> <br>
+
+                                                <a href="https://lmrcl.com/passengerinfo/go-smart-card/"><button
+                                                        style="border-radius: 50% 0  50% 0 ;width: 50% ;">Learn
+                                                        More</button> </a>
+
+                                            </span></center>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-sm-3"></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="row" style="background-color:rgba(119, 119, 222, 0.938); height:10%; margin: top 500%;; ">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-2 ">
+                        <a href="index.html"><img src="image/house.png" .jpg" height="50px"
+                                style="margin-top: 20px;border-radius: 10%">
+                        </a>
+                    </div>
+                    <div class="col-2">
+                        <img src="image/logo.jpg" height="50px" style="margin-top: 20px;border-radius: 10%">
+                    </div>
+                    <div class="col-2">
+                        <a href="page6.html"> <img src="image/metro.jpg" alt="" class="img-fluid"
+                                style="height: 60px; border-radius: 10%; margin-top: 10px; "></a>
+
+                    </div>
+                    <div class="col-2">
+                        <a href="page6.html"> <img src="image/foot.png" height="50px"
+                                style="margin-top: 20px; border-radius: 10%;"></a>
+                    </div>
+
+
+                    <div class="col-sm-2">
+                        <a href="page16.html">
+                            <img src="image/logo.jpg" height="50px" style="margin-top: 20px;border-radius: 10% ">
+                    </div>
+                    <div class="col-sm-1"></div>
+                </div>
+            </div>
+            <div class="col-sm-3"></div>
+        </div>
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            document.getElementById('getFareBtn').addEventListener('click', function () {
+                var fromLocation = document.getElementById('fromLocation').value;
+                var toLocation = document.getElementById('toLocation').value;
+                var fare = calculateFare(fromLocation, toLocation);
+
+                window.location.href = 'page9.html?fare=' + fare;
+            });
+
+            function calculateFare(fromLocation, toLocation) {
+                var fareTable = {
+                    "Munsipulia": {
+                        'Munsipulia': 0,
+                        'indira Nagar Metro': 10,
+                        "Bhootnath Market": 15,
+                        "Lekhraj Market":20,
+                        "Badshah Nagar":20,
+                        "IT College":20,
+                        "Vishvavidyalay Metro":20,
+                        "K D Singh Stadium":30,
+                        "Hazratganj":30,
+                        "Sachivalaya":30,
+                        "Husainganj":40,
+                        "Durga Puri":40,
+                        "Mawaiya":40,
+                        "Alambagh Bus Stand":40,
+                        "Singar Nagar":50,
+                        "Krishna Nagar Metro":50,
+                        "Transport Nagar":50,
+                        "Amausi Metro":50,
+                        "CCS Airport":60,
+                        },
+                    };
+                return fareTable[fromLocation][toLocation] || 0;
+            }
+        });
+    </script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        document.getElementById('getFareBtn').addEventListener('click', function () {
+            var fromLocation = document.getElementById('fromLocation').value;
+            var toLocation = document.getElementById('toLocation').value;
+            var fare = calculateFare(fromLocation, toLocation);
+
+            window.location.href = 'page9.html?fare=' + fare;
+        });
+
+        function calculateFare(fromLocation, toLocation) {
+            var fareTable = {
+                "indira Nagar Metro": {
+                    'Munsipulia': 10,
+                    'indira Nagar Metro': 0,
+                    "Bhootnath Market": 15,
+                    "Lekhraj Market":20,
+                    "Badshah Nagar":20,
+                    "IT College":20,
+                    "Vishvavidyalay Metro":20,
+                    "K D Singh Stadium":30,
+                    "Hazratganj":30,
+                    "Sachivalaya":30,
+                    "Husainganj":40,
+                    "Durga Puri":40,
+                    "Mawaiya":40,
+                    "Alambagh Bus Stand":40,
+                    "Singar Nagar":50,
+                    "Krishna Nagar Metro":50,
+                    "Transport Nagar":50,
+                    "Amausi Metro":50,
+                    "CCS Airport":60,
+                   
+                    
+
+                },
+
+            };
+
+            
+
+            return fareTable[fromLocation][toLocation] || 0;
+        }
+    });
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        document.getElementById('getFareBtn').addEventListener('click', function () {
+            var fromLocation = document.getElementById('fromLocation').value;
+            var toLocation = document.getElementById('toLocation').value;
+            var fare = calculateFare(fromLocation, toLocation);
+
+            window.location.href = 'page9.html?fare=' + fare;
+        });
+
+        function calculateFare(fromLocation, toLocation) {
+            var fareTable = {
+                "Bhootnath Market": {
+                    'Munsipulia': 10,
+                    'indira Nagar Metro': 10,
+                    "Bhootnath Market": 0,
+                    "Lekhraj Market":20,
+                    "Badshah Nagar":20,
+                    "IT College":20,
+                    "Vishvavidyalay Metro":20,
+                    "K D Singh Stadium":30,
+                    "Hazratganj":30,
+                    "Sachivalaya":30,
+                    "Husainganj":40,
+                    "Durga Puri":40,
+                    "Mawaiya":40,
+                    "Alambagh Bus Stand":40,
+                    "Singar Nagar":50,
+                    "Krishna Nagar Metro":50,
+                    "Transport Nagar":50,
+                    "Amausi Metro":50,
+                    "CCS Airport":60,
+                   
+                    
+
+                },
+
+            };
+
+            
+
+            return fareTable[fromLocation][toLocation] || 0;
+        }
+    });
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        document.getElementById('getFareBtn').addEventListener('click', function () {
+            var fromLocation = document.getElementById('fromLocation').value;
+            var toLocation = document.getElementById('toLocation').value;
+            var fare = calculateFare(fromLocation, toLocation);
+
+            window.location.href = 'page9.html?fare=' + fare;
+        });
+
+        function calculateFare(fromLocation, toLocation) {
+            var fareTable = {
+                "Lekhraj Market": {
+                    'Munsipulia': 10,
+                    'indira Nagar Metro': 10,
+                    "Bhootnath Market": 15,
+                    "Lekhraj Market":0,
+                    "Badshah Nagar":20,
+                    "IT College":20,
+                    "Vishvavidyalay Metro":20,
+                    "K D Singh Stadium":30,
+                    "Hazratganj":30,
+                    "Sachivalaya":30,
+                    "Husainganj":40,
+                    "Durga Puri":40,
+                    "Mawaiya":40,
+                    "Alambagh Bus Stand":40,
+                    "Singar Nagar":50,
+                    "Krishna Nagar Metro":50,
+                    "Transport Nagar":50,
+                    "Amausi Metro":50,
+                    "CCS Airport":60,
+                   
+                    
+
+                },
+
+            };
+
+            
+
+            return fareTable[fromLocation][toLocation] || 0;
+        }
+    });
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        document.getElementById('getFareBtn').addEventListener('click', function () {
+            var fromLocation = document.getElementById('fromLocation').value;
+            var toLocation = document.getElementById('toLocation').value;
+            var fare = calculateFare(fromLocation, toLocation);
+
+            window.location.href = 'page9.html?fare=' + fare;
+        });
+
+        function calculateFare(fromLocation, toLocation) {
+            var fareTable = {
+                "Badshah Nagar": {
+                    'Munsipulia': 10,
+                    'indira Nagar Metro': 10,
+                    "Bhootnath Market": 15,
+                    "Lekhraj Market":20,
+                    "Badshah Nagar":0,
+                    "IT College":20,
+                    "Vishvavidyalay Metro":20,
+                    "K D Singh Stadium":30,
+                    "Hazratganj":30,
+                    "Sachivalaya":30,
+                    "Husainganj":40,
+                    "Durga Puri":40,
+                    "Mawaiya":40,
+                    "Alambagh Bus Stand":40,
+                    "Singar Nagar":50,
+                    "Krishna Nagar Metro":50,
+                    "Transport Nagar":50,
+                    "Amausi Metro":50,
+                    "CCS Airport":60,
+                   
+                    
+
+                },
+
+            };
+
+            
+
+            return fareTable[fromLocation][toLocation] || 0;
+        }
+    });
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        document.getElementById('getFareBtn').addEventListener('click', function () {
+            var fromLocation = document.getElementById('fromLocation').value;
+            var toLocation = document.getElementById('toLocation').value;
+            var fare = calculateFare(fromLocation, toLocation);
+
+            window.location.href = 'page9.html?fare=' + fare;
+        });
+
+        function calculateFare(fromLocation, toLocation) {
+            var fareTable = {
+                "IT College": {
+                    'Munsipulia': 0,
+                    'indira Nagar Metro': 10,
+                    "Bhootnath Market": 15,
+                    "Lekhraj Market":20,
+                    "Badshah Nagar":20,
+                    "IT College":20,
+                    "Vishvavidyalay Metro":20,
+                    "K D Singh Stadium":30,
+                    "Hazratganj":30,
+                    "Sachivalaya":30,
+                    "Husainganj":40,
+                    "Durga Puri":40,
+                    "Mawaiya":40,
+                    "Alambagh Bus Stand":40,
+                    "Singar Nagar":50,
+                    "Krishna Nagar Metro":50,
+                    "Transport Nagar":50,
+                    "Amausi Metro":50,
+                    "CCS Airport":60,
+                   
+                    
+
+                },
+
+            };
+
+            
+
+            return fareTable[fromLocation][toLocation] || 0;
+        }
+    });
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        document.getElementById('getFareBtn').addEventListener('click', function () {
+            var fromLocation = document.getElementById('fromLocation').value;
+            var toLocation = document.getElementById('toLocation').value;
+            var fare = calculateFare(fromLocation, toLocation);
+
+            window.location.href = 'page9.html?fare=' + fare;
+        });
+
+        function calculateFare(fromLocation, toLocation) {
+            var fareTable = {
+                'Munsipulia': {
+                    'Munsipulia': 0,
+                    'indira Nagar Metro': 10,
+                    "Bhootnath Market": 15,
+                    "Lekhraj Market":20,
+                    "Badshah Nagar":20,
+                    "IT College":20,
+                    "Vishvavidyalay Metro":20,
+                    "K D Singh Stadium":30,
+                    "Hazratganj":30,
+                    "Sachivalaya":30,
+                    "Husainganj":40,
+                    "Durga Puri":40,
+                    "Mawaiya":40,
+                    "Alambagh Bus Stand":40,
+                    "Singar Nagar":50,
+                    "Krishna Nagar Metro":50,
+                    "Transport Nagar":50,
+                    "Amausi Metro":50,
+                    "CCS Airport":60,
+                   
+                    
+
+                },
+
+            };
+
+            
+
+            return fareTable[fromLocation][toLocation] || 0;
+        }
+    });
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        document.getElementById('getFareBtn').addEventListener('click', function () {
+            var fromLocation = document.getElementById('fromLocation').value;
+            var toLocation = document.getElementById('toLocation').value;
+            var fare = calculateFare(fromLocation, toLocation);
+
+            window.location.href = 'page9.html?fare=' + fare;
+        });
+
+        function calculateFare(fromLocation, toLocation) {
+            var fareTable = {
+                'Munsipulia': {
+                    'Munsipulia': 0,
+                    'indira Nagar Metro': 10,
+                    "Bhootnath Market": 15,
+                    "Lekhraj Market":20,
+                    "Badshah Nagar":20,
+                    "IT College":20,
+                    "Vishvavidyalay Metro":20,
+                    "K D Singh Stadium":30,
+                    "Hazratganj":30,
+                    "Sachivalaya":30,
+                    "Husainganj":40,
+                    "Durga Puri":40,
+                    "Mawaiya":40,
+                    "Alambagh Bus Stand":40,
+                    "Singar Nagar":50,
+                    "Krishna Nagar Metro":50,
+                    "Transport Nagar":50,
+                    "Amausi Metro":50,
+                    "CCS Airport":60,
+                   
+                    
+
+                },
+
+            };
+
+            
+
+            return fareTable[fromLocation][toLocation] || 0;
+        }
+    });
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        document.getElementById('getFareBtn').addEventListener('click', function () {
+            var fromLocation = document.getElementById('fromLocation').value;
+            var toLocation = document.getElementById('toLocation').value;
+            var fare = calculateFare(fromLocation, toLocation);
+
+            window.location.href = 'page9.html?fare=' + fare;
+        });
+
+        function calculateFare(fromLocation, toLocation) {
+            var fareTable = {
+                'Munsipulia': {
+                    'Munsipulia': 0,
+                    'indira Nagar Metro': 10,
+                    "Bhootnath Market": 15,
+                    "Lekhraj Market":20,
+                    "Badshah Nagar":20,
+                    "IT College":20,
+                    "Vishvavidyalay Metro":20,
+                    "K D Singh Stadium":30,
+                    "Hazratganj":30,
+                    "Sachivalaya":30,
+                    "Husainganj":40,
+                    "Durga Puri":40,
+                    "Mawaiya":40,
+                    "Alambagh Bus Stand":40,
+                    "Singar Nagar":50,
+                    "Krishna Nagar Metro":50,
+                    "Transport Nagar":50,
+                    "Amausi Metro":50,
+                    "CCS Airport":60,
+                   
+                    
+
+                },
+
+            };
+
+            
+
+            return fareTable[fromLocation][toLocation] || 0;
+        }
+    });
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        document.getElementById('getFareBtn').addEventListener('click', function () {
+            var fromLocation = document.getElementById('fromLocation').value;
+            var toLocation = document.getElementById('toLocation').value;
+            var fare = calculateFare(fromLocation, toLocation);
+
+            window.location.href = 'page9.html?fare=' + fare;
+        });
+
+        function calculateFare(fromLocation, toLocation) {
+            var fareTable = {
+                'Munsipulia': {
+                    'Munsipulia': 0,
+                    'indira Nagar Metro': 10,
+                    "Bhootnath Market": 15,
+                    "Lekhraj Market":20,
+                    "Badshah Nagar":20,
+                    "IT College":20,
+                    "Vishvavidyalay Metro":20,
+                    "K D Singh Stadium":30,
+                    "Hazratganj":30,
+                    "Sachivalaya":30,
+                    "Husainganj":40,
+                    "Durga Puri":40,
+                    "Mawaiya":40,
+                    "Alambagh Bus Stand":40,
+                    "Singar Nagar":50,
+                    "Krishna Nagar Metro":50,
+                    "Transport Nagar":50,
+                    "Amausi Metro":50,
+                    "CCS Airport":60,
+                   
+                    
+
+                },
+
+            };
+
+            
+
+            return fareTable[fromLocation][toLocation] || 0;
+        }
+    });
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        document.getElementById('getFareBtn').addEventListener('click', function () {
+            var fromLocation = document.getElementById('fromLocation').value;
+            var toLocation = document.getElementById('toLocation').value;
+            var fare = calculateFare(fromLocation, toLocation);
+
+            window.location.href = 'page9.html?fare=' + fare;
+        });
+
+        function calculateFare(fromLocation, toLocation) {
+            var fareTable = {
+                'Munsipulia': {
+                    'Munsipulia': 0,
+                    'indira Nagar Metro': 10,
+                    "Bhootnath Market": 15,
+                    "Lekhraj Market":20,
+                    "Badshah Nagar":20,
+                    "IT College":20,
+                    "Vishvavidyalay Metro":20,
+                    "K D Singh Stadium":30,
+                    "Hazratganj":30,
+                    "Sachivalaya":30,
+                    "Husainganj":40,
+                    "Durga Puri":40,
+                    "Mawaiya":40,
+                    "Alambagh Bus Stand":40,
+                    "Singar Nagar":50,
+                    "Krishna Nagar Metro":50,
+                    "Transport Nagar":50,
+                    "Amausi Metro":50,
+                    "CCS Airport":60,
+                   
+                    
+
+                },
+
+            };
+
+            
+
+            return fareTable[fromLocation][toLocation] || 0;
+        }
+    });
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        document.getElementById('getFareBtn').addEventListener('click', function () {
+            var fromLocation = document.getElementById('fromLocation').value;
+            var toLocation = document.getElementById('toLocation').value;
+            var fare = calculateFare(fromLocation, toLocation);
+
+            window.location.href = 'page9.html?fare=' + fare;
+        });
+
+        function calculateFare(fromLocation, toLocation) {
+            var fareTable = {
+                'Munsipulia': {
+                    'Munsipulia': 0,
+                    'indira Nagar Metro': 10,
+                    "Bhootnath Market": 15,
+                    "Lekhraj Market":20,
+                    "Badshah Nagar":20,
+                    "IT College":20,
+                    "Vishvavidyalay Metro":20,
+                    "K D Singh Stadium":30,
+                    "Hazratganj":30,
+                    "Sachivalaya":30,
+                    "Husainganj":40,
+                    "Durga Puri":40,
+                    "Mawaiya":40,
+                    "Alambagh Bus Stand":40,
+                    "Singar Nagar":50,
+                    "Krishna Nagar Metro":50,
+                    "Transport Nagar":50,
+                    "Amausi Metro":50,
+                    "CCS Airport":60,
+                   
+                    
+
+                },
+
+            };
+
+            
+
+            return fareTable[fromLocation][toLocation] || 0;
+        }
+    });
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        document.getElementById('getFareBtn').addEventListener('click', function () {
+            var fromLocation = document.getElementById('fromLocation').value;
+            var toLocation = document.getElementById('toLocation').value;
+            var fare = calculateFare(fromLocation, toLocation);
+
+            window.location.href = 'page9.html?fare=' + fare;
+        });
+
+        function calculateFare(fromLocation, toLocation) {
+            var fareTable = {
+                'Munsipulia': {
+                    'Munsipulia': 0,
+                    'indira Nagar Metro': 10,
+                    "Bhootnath Market": 15,
+                    "Lekhraj Market":20,
+                    "Badshah Nagar":20,
+                    "IT College":20,
+                    "Vishvavidyalay Metro":20,
+                    "K D Singh Stadium":30,
+                    "Hazratganj":30,
+                    "Sachivalaya":30,
+                    "Husainganj":40,
+                    "Durga Puri":40,
+                    "Mawaiya":40,
+                    "Alambagh Bus Stand":40,
+                    "Singar Nagar":50,
+                    "Krishna Nagar Metro":50,
+                    "Transport Nagar":50,
+                    "Amausi Metro":50,
+                    "CCS Airport":60,
+                   
+                    
+
+                },
+
+            };
+
+            
+
+            return fareTable[fromLocation][toLocation] || 0;
+        }
+    });
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        document.getElementById('getFareBtn').addEventListener('click', function () {
+            var fromLocation = document.getElementById('fromLocation').value;
+            var toLocation = document.getElementById('toLocation').value;
+            var fare = calculateFare(fromLocation, toLocation);
+
+            window.location.href = 'page9.html?fare=' + fare;
+        });
+
+        function calculateFare(fromLocation, toLocation) {
+            var fareTable = {
+                'Munsipulia': {
+                    'Munsipulia': 0,
+                    'indira Nagar Metro': 10,
+                    "Bhootnath Market": 15,
+                    "Lekhraj Market":20,
+                    "Badshah Nagar":20,
+                    "IT College":20,
+                    "Vishvavidyalay Metro":20,
+                    "K D Singh Stadium":30,
+                    "Hazratganj":30,
+                    "Sachivalaya":30,
+                    "Husainganj":40,
+                    "Durga Puri":40,
+                    "Mawaiya":40,
+                    "Alambagh Bus Stand":40,
+                    "Singar Nagar":50,
+                    "Krishna Nagar Metro":50,
+                    "Transport Nagar":50,
+                    "Amausi Metro":50,
+                    "CCS Airport":60,
+                   
+                    
+
+                },
+
+            };
+
+            
+
+            return fareTable[fromLocation][toLocation] || 0;
+        }
+    });
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        document.getElementById('getFareBtn').addEventListener('click', function () {
+            var fromLocation = document.getElementById('fromLocation').value;
+            var toLocation = document.getElementById('toLocation').value;
+            var fare = calculateFare(fromLocation, toLocation);
+
+            window.location.href = 'page9.html?fare=' + fare;
+        });
+
+        function calculateFare(fromLocation, toLocation) {
+            var fareTable = {
+                'Munsipulia': {
+                    'Munsipulia': 0,
+                    'indira Nagar Metro': 10,
+                    "Bhootnath Market": 15,
+                    "Lekhraj Market":20,
+                    "Badshah Nagar":20,
+                    "IT College":20,
+                    "Vishvavidyalay Metro":20,
+                    "K D Singh Stadium":30,
+                    "Hazratganj":30,
+                    "Sachivalaya":30,
+                    "Husainganj":40,
+                    "Durga Puri":40,
+                    "Mawaiya":40,
+                    "Alambagh Bus Stand":40,
+                    "Singar Nagar":50,
+                    "Krishna Nagar Metro":50,
+                    "Transport Nagar":50,
+                    "Amausi Metro":50,
+                    "CCS Airport":60,
+                   
+                    
+
+                },
+
+            };
+
+            
+
+            return fareTable[fromLocation][toLocation] || 0;
+        }
+    });
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        document.getElementById('getFareBtn').addEventListener('click', function () {
+            var fromLocation = document.getElementById('fromLocation').value;
+            var toLocation = document.getElementById('toLocation').value;
+            var fare = calculateFare(fromLocation, toLocation);
+
+            window.location.href = 'page9.html?fare=' + fare;
+        });
+
+        function calculateFare(fromLocation, toLocation) {
+            var fareTable = {
+                'Munsipulia': {
+                    'Munsipulia': 0,
+                    'indira Nagar Metro': 10,
+                    "Bhootnath Market": 15,
+                    "Lekhraj Market":20,
+                    "Badshah Nagar":20,
+                    "IT College":20,
+                    "Vishvavidyalay Metro":20,
+                    "K D Singh Stadium":30,
+                    "Hazratganj":30,
+                    "Sachivalaya":30,
+                    "Husainganj":40,
+                    "Durga Puri":40,
+                    "Mawaiya":40,
+                    "Alambagh Bus Stand":40,
+                    "Singar Nagar":50,
+                    "Krishna Nagar Metro":50,
+                    "Transport Nagar":50,
+                    "Amausi Metro":50,
+                    "CCS Airport":60,
+                   
+                    
+
+                },
+
+            };
+
+            
+
+            return fareTable[fromLocation][toLocation] || 0;
+        }
+    });
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        document.getElementById('getFareBtn').addEventListener('click', function () {
+            var fromLocation = document.getElementById('fromLocation').value;
+            var toLocation = document.getElementById('toLocation').value;
+            var fare = calculateFare(fromLocation, toLocation);
+
+            window.location.href = 'page9.html?fare=' + fare;
+        });
+
+        function calculateFare(fromLocation, toLocation) {
+            var fareTable = {
+                'Munsipulia': {
+                    'Munsipulia': 0,
+                    'indira Nagar Metro': 10,
+                    "Bhootnath Market": 15,
+                    "Lekhraj Market":20,
+                    "Badshah Nagar":20,
+                    "IT College":20,
+                    "Vishvavidyalay Metro":20,
+                    "K D Singh Stadium":30,
+                    "Hazratganj":30,
+                    "Sachivalaya":30,
+                    "Husainganj":40,
+                    "Durga Puri":40,
+                    "Mawaiya":40,
+                    "Alambagh Bus Stand":40,
+                    "Singar Nagar":50,
+                    "Krishna Nagar Metro":50,
+                    "Transport Nagar":50,
+                    "Amausi Metro":50,
+                    "CCS Airport":60,
+                   
+                    
+
+                },
+
+            };
+
+            
+
+            return fareTable[fromLocation][toLocation] || 0;
+        }
+    });
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        document.getElementById('getFareBtn').addEventListener('click', function () {
+            var fromLocation = document.getElementById('fromLocation').value;
+            var toLocation = document.getElementById('toLocation').value;
+            var fare = calculateFare(fromLocation, toLocation);
+
+            window.location.href = 'page9.html?fare=' + fare;
+        });
+
+        function calculateFare(fromLocation, toLocation) {
+            var fareTable = {
+                'Munsipulia': {
+                    'Munsipulia': 0,
+                    'indira Nagar Metro': 10,
+                    "Bhootnath Market": 15,
+                    "Lekhraj Market":20,
+                    "Badshah Nagar":20,
+                    "IT College":20,
+                    "Vishvavidyalay Metro":20,
+                    "K D Singh Stadium":30,
+                    "Hazratganj":30,
+                    "Sachivalaya":30,
+                    "Husainganj":40,
+                    "Durga Puri":40,
+                    "Mawaiya":40,
+                    "Alambagh Bus Stand":40,
+                    "Singar Nagar":50,
+                    "Krishna Nagar Metro":50,
+                    "Transport Nagar":50,
+                    "Amausi Metro":50,
+                    "CCS Airport":60,
+                   
+                    
+
+                },
+
+            };
+
+            
+
+            return fareTable[fromLocation][toLocation] || 0;
+        }
+    });
+</script>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        document.getElementById('getFareBtn').addEventListener('click', function () {
+            var fromLocation = document.getElementById('fromLocation').value;
+            var toLocation = document.getElementById('toLocation').value;
+            var fare = calculateFare(fromLocation, toLocation);
+
+            window.location.href = 'page9.html?fare=' + fare;
+        });
+
+        function calculateFare(fromLocation, toLocation) {
+            var fareTable = {
+                'Munsipulia': {
+                    'Munsipulia': 0,
+                    'indira Nagar Metro': 10,
+                    "Bhootnath Market": 15,
+                    "Lekhraj Market":20,
+                    "Badshah Nagar":20,
+                    "IT College":20,
+                    "Vishvavidyalay Metro":20,
+                    "K D Singh Stadium":30,
+                    "Hazratganj":30,
+                    "Sachivalaya":30,
+                    "Husainganj":40,
+                    "Durga Puri":40,
+                    "Mawaiya":40,
+                    "Alambagh Bus Stand":40,
+                    "Singar Nagar":50,
+                    "Krishna Nagar Metro":50,
+                    "Transport Nagar":50,
+                    "Amausi Metro":50,
+                    "CCS Airport":60,
+                   
+                    
+
+                },
+
+            };
+
+            
+
+            return fareTable[fromLocation][toLocation] || 0;
+        }
+    });
+</script>
+
+
+</body>
+
+</html>
